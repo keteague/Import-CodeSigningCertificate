@@ -1,6 +1,8 @@
 # Import-CodeSigningCertificate
 
-A PowerShell script that pulls the signing certificates out of a driver package and adds them to the machine's **Trusted Publishers** store. Once a publisher is trusted, Windows installs its drivers without showing the *"Would you like to install this device software?"* prompt. That makes the script useful when you deploy drivers silently, for example printer drivers pushed by RMM, Intune, GPO or a task sequence.
+A PowerShell script that pulls the code-signing certificates out of a driver package and adds them to the machine's **Trusted Publishers** store. Once a publisher is trusted, Windows installs its drivers without showing the *"Would you like to install this device software?"* prompt. That makes the script useful when you deploy drivers silently, for example printer drivers pushed by RMM, Intune, GPO or a task sequence.
+
+> **Note:** This script was previously named `Import-DriverSigningCertificate.ps1`. Update any deployment tooling that calls the old name.
 
 ## What it does
 
